@@ -52,7 +52,6 @@ $(() => {
     $('.modal-container').css('display', 'flex');
   };
 
-
   $("ul").on("click",'.fa-trash', function(event) {
     // stopPropagation prevents 'li' click event listener from firing
     event.stopPropagation();
@@ -99,6 +98,14 @@ $(() => {
         $('.loader').css('display','none');
         $('.list-input-field').val('');
       })
+    }
+  });
+
+  $.ajax({
+    url: `/`,
+    type: 'GET',
+    success: (response) => {
+      console.log(response)
     }
   });
 

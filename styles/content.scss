@@ -4,52 +4,38 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 32px;
 
   h3 {
     text-align: center;
     cursor: pointer;
-    color: $color-0;
-    border: 2px solid $color-5;
+    color: black;
     padding: 20px 0px;
     margin: 0px;
 
     &.movies-top {
-      background-color: $movies-color;
+      background-color: rgba(17, 138, 178, 0.3);
     }
 
     &.foods-top {
-      background-color: $foods-color;
+      background-color: rgba($color: $foods-color, $alpha: 0.3);
     }
 
     &.books-top {
-      background-color: $books-color;
+      background-color: rgba($color: $books-color, $alpha: 0.3);
     }
 
     &.products-top {
-      background-color: $products-color;
+      background-color: rgba($color: $products-color, $alpha: 0.3);
     }
 
-  }
-
-  .movies-container {
-    background: $color-5;
-  }
-
-  .foods-container {
-    background: $color-5;
-  }
-
-  .books-container {
-    background: $color-5;
-  }
-
-  .products-container {
-    background: $color-5;
   }
 
   .dumbledore {
     width: 22%;
-    border: 2px solid rgba($color: $color-5, $alpha: 0.7);
+    border-radius: 5px;
+    border: 2px solid $color-4;
+    background: white;
     margin: 10px;
     box-shadow: 3px 3px rgba($color: $color-2, $alpha: 0.25);
 
@@ -60,9 +46,9 @@
     li {
       padding: 5px 10px;
       margin: 5px 0px;
-      border: 2px solid rgba($color: $color-0, $alpha: 0.7);
+      border: 2px solid rgba($color: black, $alpha: 0.4);
       list-style:none;
-      color: $color-0;
+      color: $color-5;
       transition: 0.3s;
       &:hover {
         cursor: pointer;

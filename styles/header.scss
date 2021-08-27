@@ -1,26 +1,26 @@
 @import 'variables';
 
 header {
-  height: 250px;
+  height: 400px;
+  padding-top: 150px;
   width:100vw;
-  background-image: $header-background-image;
   // background: url('https://gfycat.com/candidhappyblackbuck.gif');
-  background-color: $color-5;
+  background-color: $color-0;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   h2 {
-    color: $color-0;
-    border:2px solid $color-0;
+    color: black;
+
     padding: 15px;
   }
 
   input {
     margin: 0px 20px;
     border: none;
-    border-bottom: 2px solid $color-0;
+    border-bottom: 0.5px solid black;
     background: transparent;
     color: $color-0;
     &:focus {
@@ -30,7 +30,6 @@ header {
   }
 
   @mixin toggle() {
-    color: $color-2;
     cursor: pointer;
     font-size:30px;
   }
@@ -40,7 +39,7 @@ header {
 
   .font-awesome-icons {
     text-align: center;
-    color: $color-0;
+    color: $color-5;
     padding-right:100px;
 
     .fas {
@@ -51,86 +50,19 @@ header {
       }
     }
   }
-}
-
-div.below-header {
-  margin: 0;
-  height: 30px;
-  background-image: linear-gradient($color-5 , #b4b4b4);
-}
-
-/* 12 */
-.btn-12{
-  position: relative;
-  right: 20px;
-  bottom: 20px;
-  border:none;
-  background: transparent;
-  box-shadow: none;
-  width: 100px;
-  height: 30px;
-  line-height: 31px;
-  -webkit-perspective: 230px;
-  perspective: 230px;
+  .fa-film:hover {
+    color: $movies-color;
+  }
+  .fa-utensils:hover {
+    color: $foods-color;
+  }
+  .fa-book:hover {
+    color: $books-color;
+  }
+  .fa-shopping-cart:hover {
+    color: $products-color;
+  }
 }
 
 
-.btn-12 span {
-  background: linear-gradient(0deg, $color-3 0%, $color-2 100%);
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  border-radius: 5px;
-  margin:0;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-.btn-12 span:nth-child(1) {
-  // box-shadow:
-  //  -7px -7px 25px 0px #fff9,
-  //  -4px -4px 5px 0px #fff9,
-  //  7px 7px 20px 0px #0002,
-  //  4px 4px 5px 0px #0001;
-  -webkit-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
-  transform: rotateX(90deg);
-  -webkit-transform-origin: 50% 50% -14px;
-  -moz-transform-origin: 50% 50% -14px;
-  transform-origin: 50% 50% -14px;
-}
-.btn-12 span:nth-child(2) {
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-  -webkit-transform-origin: 50% 50% -14px;
-  -moz-transform-origin: 50% 50% -14px;
-  transform-origin: 50% 50% -14px;
-}
-.btn-12:hover span:nth-child(1) {
-  cursor: pointer;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  transform: rotateX(0deg);
-}
-.btn-12:hover span:nth-child(2) {
-  cursor: pointer;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
- color: transparent;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-}
 
